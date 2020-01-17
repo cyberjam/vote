@@ -17,8 +17,8 @@ driver = webdriver.Chrome('/Users/user/Downloads/chromedriver')#, chrome_options
 driver.implicitly_wait(3) ## 암묵적으로 웹 자원을 (최대) 3초 기다리기
 ## Login
 driver.get('https://www.facebook.com/') ## 로그인 URL로 이동하기
-driver.find_element_by_name('email').send_keys('rlawoals534@hanmail.net') ## 값 입력
-driver.find_element_by_name('pass').send_keys('nec654321!')
+driver.find_element_by_name('email').send_keys('') ## 값 입력
+driver.find_element_by_name('pass').send_keys('')
 driver.find_element_by_xpath(
     '//*[@id="loginbutton"]'
     ).click() ## 로그인 버튼클릭하기
